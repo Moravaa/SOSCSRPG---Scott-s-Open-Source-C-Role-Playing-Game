@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Engine</RootNamespace>
     <AssemblyName>Engine</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,10 +44,14 @@
   <ItemGroup>
     <Compile Include="BaseNotificationClass.cs" />
     <Compile Include="Factories\ItemFactory.cs" />
+    <Compile Include="Factories\QuestFactory.cs" />
     <Compile Include="Factories\WorldFactory.cs" />
     <Compile Include="Models\GameItem.cs" />
+    <Compile Include="Models\ItemQuantity.cs" />
     <Compile Include="Models\Location.cs" />
     <Compile Include="Models\Player.cs" />
+    <Compile Include="Models\Quest.cs" />
+    <Compile Include="Models\QuestStatus.cs" />
     <Compile Include="Models\Weapon.cs" />
     <Compile Include="Models\World.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
