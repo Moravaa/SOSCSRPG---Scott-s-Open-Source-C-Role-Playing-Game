@@ -13,12 +13,12 @@ namespace Engine.Models
         internal void AddLocation(int xCoordinate, int yCoordinate, string name, string description, string imageName)
         {
             Location loc = new Location();
-            loc.XCordinate = xCoordinate;
-            loc.YCordinate = yCoordinate;
+            loc.XCoordinate = xCoordinate;
+            loc.YCoordinate = yCoordinate;
             loc.Name = name;
             loc.Description = description;
             loc.ImageName = imageName;
-
+            loc.ImageName = $"/Engine;component/Images/Locations/{imageName}";
             _locations.Add(loc);
         }
 
@@ -26,7 +26,7 @@ namespace Engine.Models
         {
             foreach(Location loc in _locations)
             {
-                if (loc.XCordinate == xCoordinte && loc.YCordinate == yCoordinate)
+                if (loc.XCoordinate == xCoordinte && loc.YCoordinate == yCoordinate)
                 {
                     return loc;
                 }
